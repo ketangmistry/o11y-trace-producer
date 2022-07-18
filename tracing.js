@@ -9,9 +9,9 @@ const { BasicTracerProvider, BatchSpanProcessor } = require('@opentelemetry/sdk-
 diag.setLogger(new DiagConsoleLogger(), DiagLogLevel.INFO);
 
 const collectorOptions = {
-    url: 'http://localhost:8090/v1/traces',
+    url: process.env.TRACE_RECEIVER_URL + '/v1/traces',
     headers: {
-      foo: 'bar'
+      Authorization: 'Bearer ' + process.env.GCLOUD_IDENTITY_TOKEN
     }, 
     concurrencyLimit: 10,
   };
