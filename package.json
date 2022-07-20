@@ -1,4 +1,19 @@
 {
+  "name": "o11y-trace-producer",
+  "version": "1.0.0",
+  "description": "o11y Trace Producer App",
+  "keywords": ["o11y", "trace", "opentelemetry"],
+  "homepage": "https://github.com/ketangmistry/o11y-trace-producer",
+  "bugs": {
+    "url": "https://github.com/ketangmistry/o11y-trace-producer/issues",
+    "email": "ketan.g.mistry@gmail.com"
+  },
+  "license": "MIT",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ketangmistry/o11y-trace-producer"
+  },
   "dependencies": {
     "@opentelemetry/api": "^1.1.0",
     "@opentelemetry/auto-instrumentations-node": "^0.31.0",
